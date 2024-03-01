@@ -1,5 +1,5 @@
-import config from '../config/config';
-import app from './app';
+import config from './config.js';
+import app from './commons/http/app.js';
 
 (async () => {
   // TODO: initialize database connection here

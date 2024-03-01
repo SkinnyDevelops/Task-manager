@@ -3,7 +3,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import { v4 as uuid } from 'uuid';
 
-import config from '../config/config';
+import config from '../../config.js';
 
 const { API_VERSION } = config.server;
 
