@@ -11,7 +11,6 @@ const sequelize = new Sequelize({
   username: USER,
   password: PASSWORD,
   port: PORT,
-  logging: LOGGING,
   dialect: SOURCE,
 });
 
