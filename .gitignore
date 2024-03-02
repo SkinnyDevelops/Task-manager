@@ -1,6 +1,9 @@
-#editor configuration files/folders
+# Editor configuration files/folders
 .idea/
 .DS_store
+
+# Drawio cache/temporary files
+*.bkp
 
 # Logs
 logs
