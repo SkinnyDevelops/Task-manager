@@ -29,6 +29,9 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
     field: 'email',
+    validate: {
+      isEmail: true,
+    },
     unique: true,
   },
   position: {
@@ -36,7 +39,7 @@ const User = sequelize.define('User', {
     field: 'position',
     allowNull: false,
   },
-  role: {
+  roleName: {
     type: DataTypes.STRING,
     field: 'role',
     allowNull: false,
