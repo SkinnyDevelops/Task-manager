@@ -12,5 +12,7 @@ export default {
     PORT: process.env.DB_PORT,
     SOURCE: process.env.DB_SOURCE,
     LOGGING: process.env.DB_LOGGING,
+    // TODO: remove true when models implementation is finished
+    RESTORE: true || process.env.DB_RESTORE,
   },
 };
