@@ -14,4 +14,10 @@ export default {
     LOGGING: process.env.DB_LOGGING,
     RESTORE: process.env.DB_RESTORE,
   },
+  firebase: {
+    CLIENT_EMAIL: process.env.CLIENT_EMAIL,
+    PROJECT_ID: process.env.PROJECT_ID,
+    PRIVATE_KEY_ID: process.env.PRIVATE_KEY_ID,
+    PRIVATE_KEY: process.env.PRIVATE_KEY,
+  },
 };
