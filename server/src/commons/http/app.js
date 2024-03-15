@@ -30,10 +30,8 @@ app.use((req, res, next) => {
 });
 
 app.set('PREFIX', `/${API_VERSION}`);
-app.get('/', (req, res) => {
-  res.json({
-    message: 'hello world',
-  });
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
 });
 
 export default app;
