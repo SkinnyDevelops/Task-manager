@@ -12,7 +12,8 @@ export default {
     PORT: process.env.DB_PORT,
     SOURCE: process.env.DB_SOURCE,
     LOGGING: process.env.DB_LOGGING,
-    RESTORE: process.env.DB_RESTORE,
+    RESTORE: (process.env.DB_RESTORE === 'true'),
+    SYNC: (process.env.DB_SYNC === 'true'),
   },
   firebase: {
     CLIENT_EMAIL: process.env.CLIENT_EMAIL,
