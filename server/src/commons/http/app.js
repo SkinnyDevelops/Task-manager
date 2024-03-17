@@ -4,6 +4,7 @@ import cors from 'cors';
 import { v4 as uuid } from 'uuid';
 import admin from 'firebase-admin';
 import config from '../../config.js';
+import router from './routers.js';
 
 const { API_VERSION } = config.server;
 
@@ -29,7 +30,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.set('PREFIX', `/${API_VERSION}`);
+app.use(`/${API_VERSION}`, router);
 app.get('/ping', (req, res) => {
   res.status(200).send('pong');
 });
