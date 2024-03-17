@@ -22,10 +22,12 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'class-methods-use-this': 0,
     'no-console': 0,
+    'default-case': 0,
     'import/extensions': [
       'off',
-      'ignorePackages', { js: 'never' },
+      'ignorePackages', {js: 'never'},
     ],
   },
 };
