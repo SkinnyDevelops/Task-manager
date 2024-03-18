@@ -1,0 +1,9 @@
+{
+  "local": {
+    "username": "task-manager-user",
+    "password": "password",
+    "database": "task-manager",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
