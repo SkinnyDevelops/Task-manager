@@ -27,7 +27,7 @@ module.exports = {
     'default-case': 0,
     'import/extensions': [
       'off',
-      'ignorePackages', {js: 'never'},
+      'ignorePackages', { js: 'never' },
     ],
   },
 };

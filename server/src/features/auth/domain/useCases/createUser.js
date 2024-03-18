@@ -20,8 +20,11 @@ class CreateUser {
         idQuery: this.idQuery,
       };
     } catch (e) {
-      console.error(e);
-      throw new Error(e);
+      return {
+        status: 500,
+        message: 'Error while creating user',
+        idQuery: this.idQuery,
+      };
     }
   }
 }

@@ -5,10 +5,10 @@ async function registerUser(req, res) {
 
   const service = new CreateUser({
     idQuery,
-    body,
+    properties: body,
   });
 
-  const response = service.execute();
+  const response = await service.execute();
 
   res.status(
     response.status,

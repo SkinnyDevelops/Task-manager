@@ -10,7 +10,7 @@
     "dev": "nodemon  --env-file=.env src/index.js",
     "lint": "eslint . --fix"
   },
-  "type": "commonjs",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
